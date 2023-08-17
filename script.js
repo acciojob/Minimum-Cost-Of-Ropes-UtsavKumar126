@@ -9,7 +9,7 @@ function calculateMinCost() {
 
     let sum = 0;
 
-    while (ropeLengthsArray.length != 0) {
+    while (ropeLengthsArray.length >1) {
         ropeLengthsArray.sort(function(a, b) { return a - b; }); // Sort the rope lengths in ascending order
         let a = ropeLengthsArray.shift(); // Get the shortest rope length
         let b = ropeLengthsArray.shift(); // Get the second shortest rope length
