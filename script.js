@@ -1,8 +1,8 @@
 // Function to calculate the minimum cost of connecting ropes
-function calculateMinCost() {
 	function calculateMinCost() {
     // Get the input value
-    var ropeLengthsInput = document.getElementById("rope-lengths").value;
+    const ropeLengthsInput = document.getElementById("rope-lengths").value;
+	console.log(ropeLengthsInput);	
     
     // Convert the input string to an array of integers
     var ropeLengthsArray = ropeLengthsInput.split(",").map(Number);
@@ -19,9 +19,9 @@ function calculateMinCost() {
 
     // Display the result in the result element
     var resultElement = document.getElementById("result");
-    resultElement.innerHTML = "Minimum cost: " + sum;
+    resultElement.textContent = "Minimum cost: " + sum;
 }
 
-}
+
 
  
